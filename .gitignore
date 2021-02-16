@@ -4,4 +4,4 @@ venv
 server/docker-compose.yml
 server/Dockerfile
 server/requirements.txt
-server/src/__pycach__
+server/src/__pycache__
