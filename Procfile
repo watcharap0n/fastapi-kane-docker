@@ -1,1 +1,1 @@
-web: uvicorn ./server.src.app:app --host 0.0.0.0 --port $PORT --workers 2
+web: uvicorn sh -c 'cd ./server/src/ && exec app' --host 0.0.0.0 --port $PORT --workers 2
