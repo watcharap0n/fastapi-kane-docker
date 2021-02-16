@@ -1,3 +1,7 @@
 venv
 .gitattributes
 .idea
+server/docker-compose.yml
+server/Dockerfile
+server/requirements.txt
+server/src/__pycach__
