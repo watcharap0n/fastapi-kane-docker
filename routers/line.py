@@ -16,4 +16,4 @@ async def api_line_mango(userId: str, payload: Optional[dict] = Body(None)):
     try:
         return {'UserId': userId, 'Payload': payload}
     except Exception:
-        raise HTTPException(status_code=400, detail='Methods POST and POST JSON')
+        raise HTTPException(status_code=400, detail='Invalid you must Methods POST and POST JSON')
