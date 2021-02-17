@@ -13,4 +13,7 @@ async def api_line_mango(userId: str, payload: Optional[dict] = Body(None)):
     :param userId:
     :return:
     """
-    return {'UserId': userId, 'Payload': payload}
+    try:
+        return {'UserId': userId, 'Payload': payload}
+    except Exception:
+        raise HTTPException(status_code=400, detail='Methods POST,Header,Payloads Invalid')
